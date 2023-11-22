@@ -319,6 +319,35 @@ nav a:focus, nav a:hover {
         background-color: #fff;
     }
 }
+/* tab view */
+@media (min-width: 680px) {
+    .gallery {
+       
+        grid-template-columns: repeat(auto-fill, minmax(calc(25% - 20px), 1fr));
+        gap: 20px;
+    
+    }
+  }
+  
+  /* desktop view*/
+  @media (min-width: 900px) {
+    .gallery {
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        
+        padding-bottom: 50px;
+    
+    }
+    .gallery img:nth-last-child(5) {
+        grid-column: span 2; 
+    }
+  }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
